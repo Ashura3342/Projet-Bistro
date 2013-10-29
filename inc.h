@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:23:35 2013 nathan giallombardo
-** Last update Tue Oct 29 12:22:54 2013 nathan giallombardo
+** Last update Tue Oct 29 14:25:56 2013 nathan giallombardo
 */
 
 #ifndef INCLUDE_H_
@@ -22,14 +22,13 @@ typedef struct {
   int	size;
 }	t_base;
 
-int	my_puterr(char *);
 void	*xmalloc(size_t);
 t_nb	*make_nb(char *);
 int	*free_nb(t_nb *);
 t_base	*make_base(char *);
 int	*free_base(t_base *);
 char	get_digit(t_base, char);
-char	*my_add(t_nb *, t_nb *, t_base *);
+t_nb	*my_add(t_nb *, t_nb *, t_base *);
 char	*my_sub(t_nb *, t_nb *, t_base *);
 char	*my_multi(t_nb *, t_nb *, t_base *);
 char	*my_div(t_nb *, t_nb *, t_base *);

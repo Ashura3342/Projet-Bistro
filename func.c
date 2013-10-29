@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:56:48 2013 nathan giallombardo
-** Last update Mon Oct 28 23:10:09 2013 nathan giallombardo
+** Last update Tue Oct 29 13:18:37 2013 nathan giallombardo
 */
 #include <stdlib.h>
 #include "inc.h"
@@ -16,11 +16,10 @@ void	*xmalloc(size_t size)
   int	err;
 
   s = malloc(size);
-  err = -1;
   if (s == NULL)
     {
       my_puterr("malloc segmentation fault \n");
-      return (&err);
+      exit(1);
     }
   else
     {
