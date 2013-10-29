@@ -5,13 +5,13 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:43:44 2013 nathan giallombardo
-** Last update Mon Oct 28 22:56:14 2013 nathan giallombardo
+** Last update Tue Oct 29 12:23:51 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
 #include <inc.h>
 #include <unistd.h>
-char	*my_add(t_nb *nb1, t_nb *nb2)
+char	*my_add(t_nb *nb1, t_nb *nb2, t_base *base)
 {
   char	*res;
 
@@ -19,17 +19,17 @@ char	*my_add(t_nb *nb1, t_nb *nb2)
 
 }
 
-char	*my_sous(t_nb *nb1, t_nb *nb2)
+char	*my_sous(t_nb *nb1, t_nb *nb2, t_base *base)
 {
 
 }
 
-char	*my_multi(t_nb *nb1, t_nb *nb2)
+char	*my_multi(t_nb *nb1, t_nb *nb2, t_base *base)
 {
 
 }
 
-char	*my_div(t_nb *nb1, t_nb *nb2)
+char	*my_div(t_nb *nb1, t_nb *nb2, t_base *base)
 {
 
 }
