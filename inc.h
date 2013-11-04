@@ -5,7 +5,8 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:23:35 2013 nathan giallombardo
-** Last update Mon Nov  4 13:57:12 2013 nathan giallombardo
+** Last update Mon Nov  4 14:05:43 2013 nathan giallombardo
+** Last update Mon Nov  4 13:56:54 2013 valentin wallet
 */
 
 #ifndef INCLUDE_H_
@@ -13,7 +14,8 @@
 
 # include <stdlib.h>
 
-typedef struct {
+typedef struct 
+{
   char	*nbr;
   int	size;
   int	poss;
@@ -21,7 +23,8 @@ typedef struct {
   int	end;
 }	t_nb;
 
-typedef struct {
+typedef struct 
+{
   char	*digits;
   int	size;
 }	t_base;

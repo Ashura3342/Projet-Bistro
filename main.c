@@ -5,7 +5,8 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Nov  4 12:13:22 2013 nathan giallombardo
-** Last update Mon Nov  4 14:01:22 2013 nathan giallombardo
+** Last update Mon Nov  4 14:05:25 2013 nathan giallombardo
+** Last update Mon Nov  4 13:58:19 2013 valentin wallet
 */
 
 #include	<stdlib.h>
@@ -14,12 +15,10 @@
 
 t_nb		*define_operator(t_nb *nb1, t_nb *nb2, t_base *base, char op)
 {
- 
   t_op		operator;
   t_nb		*nb;
-
   if (op == '-')
-      nb2->neg = nb2->neg * (-1);
+    nb2->neg = nb2->neg * (-1);
   if (op == '+' || op == '-')
     {
       if (nb1->neg > 0 && nb2->neg < 0 || nb1->neg < 0 && nb2->neg > 0)
