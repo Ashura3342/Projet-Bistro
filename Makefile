@@ -5,19 +5,21 @@
 ## Login   <giallo_n@epitech.net>
 ## 
 ## Started on  Tue Oct 29 12:26:28 2013 nathan giallombardo
-## Last update Tue Oct 29 12:42:14 2013 nathan giallombardo
+## Last update Tue Oct 29 17:41:44 2013 nathan giallombardo
 ##
 
 CC	= cc
 
-CFLAGS	= -I lib/ -I.
+CFLAGS	= -Ilib/ -I. -g3
 
-LIBDIR	= -L lib/ -lmy
+LIBDIR	= -Llib/ -lmy
 
 RM	= rm -f
 
 SRCS	= func.c \
-	  operator.c
+	  operator.c \
+	  func_nbr.c \
+	  func_base.c
 
 OBJS	= $(SRCS:.c=.o)
 

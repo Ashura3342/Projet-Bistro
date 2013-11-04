@@ -5,24 +5,56 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:56:48 2013 nathan giallombardo
-** Last update Tue Oct 29 13:18:37 2013 nathan giallombardo
+** Last update Fri Nov  1 17:43:43 2013 nathan giallombardo
 */
 #include <stdlib.h>
+#include "my.h"
 #include "inc.h"
 
-void	*xmalloc(size_t size)
+int	xfree(void *obj)
 {
-  void	*s;
-  int	err;
-
-  s = malloc(size);
-  if (s == NULL)
+  if (obj != NULL)
     {
-      my_puterr("malloc segmentation fault \n");
-      exit(1);
+      free(obj);
+    }
+}
+
+char	*xmalloc(int size)
+{
+  char	*a;
+  int	i;
+
+  a = malloc(size + 1);
+  i = 0;
+  if (a != NULL)
+    {
+      while (i < size)
+	a[i++] = '0';
+      a[i] = '\0';
     }
   else
+    my_puterr("error malloc \n");
+  return (a);
+}
+
+int	my_max(int a, int b)
+{
+  if (a >= b)
+    return (1);
+  else
+    return (0);
+}
+
+int	my_isneg(char *str, int *i)
+{
+  int	a;
+
+  *i = 0;
+  a = 1;
+  while (str[*i] == '-' && str[*i] == '+')
     {
-      return (s);
+      if (str[*i++] == '-')
+	a = a * (-1);
     }
+  return (a);
 }
