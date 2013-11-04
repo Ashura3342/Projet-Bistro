@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:43:44 2013 nathan giallombardo
-** Last update Mon Nov  4 17:03:48 2013 nathan giallombardo
+** Last update Mon Nov  4 22:20:17 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
@@ -75,8 +75,10 @@ t_nb	*my_sub(t_nb *nb1, t_nb *nb2, t_base *base)
 	  c = 0;
 	}
     }
-  nb->nbr[nb->poss] = '\0';
+  nb->nbr[nb->poss++] = '\0';
   my_revstr(nb->nbr);
+  if (nb1->neg < 0)
+    nb->neg = nb->neg * (-1);
   return (nb);
 }
 
