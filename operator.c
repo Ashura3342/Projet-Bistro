@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:43:44 2013 nathan giallombardo
-** Last update Mon Nov  4 13:41:29 2013 nathan giallombardo
+** Last update Mon Nov  4 13:57:37 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
@@ -16,7 +16,7 @@ t_nb	*my_add(t_nb *nb1, t_nb *nb2, t_base *base)
 {
   t_nb	*nb;
   int	c;
-
+  
   c = 0;
   nb = make_nb_empty(nb1->size + 1);
   while (is_end_nbr(nb2))
@@ -40,15 +40,15 @@ t_nb	*my_add(t_nb *nb1, t_nb *nb2, t_base *base)
 
 t_nb	*my_sub(t_nb *nb1, t_nb *nb2, t_base *base)
 {
-  my_putstr("sous\n");
+  my_putstr("soustraction\n");
 }
 
 t_nb	*my_multi(t_nb *nb1, t_nb *nb2, t_base *base)
 {
-
+  my_putstr("multiplication\n");
 }
 
 t_nb	*my_div(t_nb *nb1, t_nb *nb2, t_base *base)
 {
-
+  my_putstr("division\n");
 }

@@ -5,19 +5,18 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Nov  4 12:13:22 2013 nathan giallombardo
-** Last update Mon Nov  4 13:44:11 2013 nathan giallombardo
+** Last update Mon Nov  4 14:01:22 2013 nathan giallombardo
 */
 
-#include		<stdlib.h>
-#include		"my.h"
-#include		"inc.h"
-typedef t_nb* (*t_op)(t_nb*, t_nb*, t_base*);
+#include	<stdlib.h>
+#include	"my.h"
+#include	"inc.h"
 
-t_nb			*define_operator(t_nb *nb1, t_nb *nb2, t_base *base, char op)
+t_nb		*define_operator(t_nb *nb1, t_nb *nb2, t_base *base, char op)
 {
  
-  t_op			operator;
-  t_nb			*nb;
+  t_op		operator;
+  t_nb		*nb;
 
   if (op == '-')
       nb2->neg = nb2->neg * (-1);
@@ -40,12 +39,12 @@ t_nb			*define_operator(t_nb *nb1, t_nb *nb2, t_base *base, char op)
   return (operator(nb1, nb2, base));
 } 
 
-int			main(int ac, char **av)
+int		main(int ac, char **av)
 {
-  t_nb			*nb;
-  t_nb			*nb1;
-  t_nb			*nb2;
-  t_base		*base;
+  t_nb		*nb;
+  t_nb		*nb1;
+  t_nb		*nb2;
+  t_base	*base;
 
   if (ac != 5)
     {

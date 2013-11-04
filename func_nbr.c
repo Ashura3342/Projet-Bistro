@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Tue Oct 29 12:56:58 2013 nathan giallombardo
-** Last update Mon Nov  4 12:46:37 2013 nathan giallombardo
+** Last update Mon Nov  4 13:58:30 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
@@ -42,7 +42,6 @@ t_nb	*make_nb_empty(int size)
 {
   return (make_nb_base(xmalloc(size), size, 0, 1, 0));
 }
-
 
 int	is_end_nbr(t_nb *nb)
 {

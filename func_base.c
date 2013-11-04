@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Tue Oct 29 13:05:30 2013 nathan giallombardo
-** Last update Mon Nov  4 12:14:54 2013 nathan giallombardo
+** Last update Mon Nov  4 13:58:41 2013 nathan giallombardo
 */
 
 #include	<stdlib.h>
@@ -15,7 +15,7 @@
 t_base		*make_base(char *digits)
 {
   t_base	*base;
-  
+
   base = malloc(sizeof(t_base));
   base->digits = digits;
   base->size = my_strlen(digits);

@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:23:35 2013 nathan giallombardo
-** Last update Mon Nov  4 13:31:03 2013 nathan giallombardo
+** Last update Mon Nov  4 13:57:12 2013 nathan giallombardo
 */
 
 #ifndef INCLUDE_H_
@@ -25,6 +25,8 @@ typedef struct {
   char	*digits;
   int	size;
 }	t_base;
+
+typedef t_nb* (*t_op)(t_nb*, t_nb*, t_base*);
 
 int	xfree(void *);
 char	*xmalloc(int);
