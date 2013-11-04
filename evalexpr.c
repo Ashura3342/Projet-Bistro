@@ -5,7 +5,7 @@
 ** Login   <wallet_v@epitech.net>
 ** 
 ** Started on  Tue Oct 29 12:26:11 2013 valentin wallet
-** Last update Mon Nov  4 12:07:57 2013 nathan giallombardo
+** Last update Mon Nov  4 14:00:15 2013 valentin wallet
 */
 
 #include <stdlib.h>
@@ -27,7 +27,7 @@ int	parcours(char *str, int *i)
 	  parcours(str, i);
 	}
       else
-	  my_putchar(dest[*i]);
+	my_putchar(dest[*i]);
       *i = *i + 1;
     }
 }
