@@ -5,19 +5,23 @@
 ## Login   <giallo_n@epitech.net>
 ## 
 ## Started on  Tue Oct 29 12:26:28 2013 nathan giallombardo
-## Last update Tue Oct 29 18:43:51 2013 valentin wallet
+## Last update Mon Nov  4 11:51:45 2013 valentin wallet
+## Last update Tue Oct 29 17:41:44 2013 nathan giallombardo
 ##
 
 CC	= cc
 
-CFLAGS	= -I lib/ -I.
+CFLAGS	= -Ilib/ -I. -g3
 
-LIBDIR	= -L lib/ -lmy
+LIBDIR	= -Llib/ -lmy
 
 RM	= rm -f
 
 SRCS	= func.c \
-	  evalexpr.c 
+	  evalexpr.c \ 
+	  operator.c \
+	  func_nbr.c \
+	  func_base.c
 
 OBJS	= $(SRCS:.c=.o)
 
