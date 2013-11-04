@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:43:44 2013 nathan giallombardo
-** Last update Mon Nov  4 12:15:15 2013 nathan giallombardo
+** Last update Mon Nov  4 13:41:29 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
@@ -38,17 +38,17 @@ t_nb	*my_add(t_nb *nb1, t_nb *nb2, t_base *base)
   return (nb);
 }
 
-char	*my_sous(t_nb *nb1, t_nb *nb2, t_base *base)
+t_nb	*my_sub(t_nb *nb1, t_nb *nb2, t_base *base)
 {
-  
+  my_putstr("sous\n");
 }
 
-char	*my_multi(t_nb *nb1, t_nb *nb2, t_base *base)
+t_nb	*my_multi(t_nb *nb1, t_nb *nb2, t_base *base)
 {
 
 }
 
-char	*my_div(t_nb *nb1, t_nb *nb2, t_base *base)
+t_nb	*my_div(t_nb *nb1, t_nb *nb2, t_base *base)
 {
 
 }

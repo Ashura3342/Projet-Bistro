@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Tue Oct 29 12:56:58 2013 nathan giallombardo
-** Last update Mon Nov  4 12:08:42 2013 nathan giallombardo
+** Last update Mon Nov  4 12:46:37 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
@@ -50,4 +50,15 @@ int	is_end_nbr(t_nb *nb)
     return (1);
   else
     return (0);
+}
+
+int	print_nb(t_nb *nb)
+{
+  int	i;
+
+  i = nb->end;
+  if (nb->neg < 0)
+    my_putchar('-');
+  while (nb->nbr[i] != '\0')
+    my_putchar(nb->nbr[i++]);
 }

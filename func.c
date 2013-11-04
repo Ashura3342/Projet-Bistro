@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:56:48 2013 nathan giallombardo
-** Last update Mon Nov  4 12:11:38 2013 nathan giallombardo
+** Last update Mon Nov  4 12:37:16 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
@@ -52,9 +52,9 @@ int	my_isneg(char *str, int *i)
 
   *i = 0;
   a = 1;
-  while (str[*i] == '-' && str[*i] == '+')
+  while (str[*i] == '-' || str[*i] == '+')
     {
-      if (str[*i++] == '-')
+      if (str[(*i)++] == '-')
 	a = a * (-1);
     }
   return (a);
