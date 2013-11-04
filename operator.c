@@ -5,8 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:43:44 2013 nathan giallombardo
-** Last update Mon Nov  4 14:08:39 2013 nathan giallombardo
-** Last update Mon Nov  4 13:59:39 2013 valentin wallet
+** Last update Mon Nov  4 14:12:38 2013 nathan giallombardo
 */
 
 #include <stdlib.h>

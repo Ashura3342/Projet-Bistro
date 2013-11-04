@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Nov  4 12:13:22 2013 nathan giallombardo
-** Last update Mon Nov  4 14:05:25 2013 nathan giallombardo
+** Last update Mon Nov  4 14:08:49 2013 valentin wallet
 ** Last update Mon Nov  4 13:58:19 2013 valentin wallet
 */
 
@@ -17,6 +17,7 @@ t_nb		*define_operator(t_nb *nb1, t_nb *nb2, t_base *base, char op)
 {
   t_op		operator;
   t_nb		*nb;
+
   if (op == '-')
     nb2->neg = nb2->neg * (-1);
   if (op == '+' || op == '-')
