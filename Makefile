@@ -5,7 +5,7 @@
 ## Login   <giallo_n@epitech.net>
 ## 
 ## Started on  Tue Oct 29 12:26:28 2013 nathan giallombardo
-## Last update Mon Nov  4 11:51:45 2013 valentin wallet
+## Last update Mon Nov  4 12:15:30 2013 nathan giallombardo
 ## Last update Tue Oct 29 17:41:44 2013 nathan giallombardo
 ##
 
@@ -18,10 +18,11 @@ LIBDIR	= -Llib/ -lmy
 RM	= rm -f
 
 SRCS	= func.c \
-	  evalexpr.c \ 
+	  evalexpr.c \
 	  operator.c \
 	  func_nbr.c \
-	  func_base.c
+	  func_base.c \
+	  main.c
 
 OBJS	= $(SRCS:.c=.o)
 

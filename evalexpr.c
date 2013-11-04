@@ -5,16 +5,17 @@
 ** Login   <wallet_v@epitech.net>
 ** 
 ** Started on  Tue Oct 29 12:26:11 2013 valentin wallet
-** Last update Fri Nov  1 15:45:47 2013 valentin wallet
+** Last update Mon Nov  4 12:07:57 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
 #include "my.h"
+#include "inc.h"
 
 int	parcours(char *str, int *i)
 {
   char	*dest;
-  
+
   dest = malloc(my_strlen(str));
   my_putchar('\n');
   my_strcpy(dest, str);
@@ -26,22 +27,7 @@ int	parcours(char *str, int *i)
 	  parcours(str, i);
 	}
       else
-	{
 	  my_putchar(dest[*i]);
-	}
       *i = *i + 1;
-    }      
+    }
 }
-
-int	main(int ac, char **av)
-{
-  int	i;
-  
-  i = 0;
-  if (ac == 2)
-    parcours(av[1], &i);
-  my_putchar('\n');
-  return (0);
-}
-      
-  

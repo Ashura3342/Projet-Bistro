@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:23:35 2013 nathan giallombardo
-** Last update Sun Nov  3 18:05:22 2013 nathan giallombardo
+** Last update Mon Nov  4 12:12:17 2013 nathan giallombardo
 */
 
 #ifndef INCLUDE_H_
@@ -29,8 +29,9 @@ typedef struct {
 int	xfree(void *);
 char	*xmalloc(int);
 int	my_isneg(char *str, int *i);
+int	parcours(char *str, int *i);
 int	my_max(int a, int b);
-t_nb	*make_nb_base(char *, int, int,int, int);
+t_nb	*make_nb_base(char *, int, int, int, int);
 t_nb	*make_nb(char *);
 t_nb	*make_nb_empty(int);
 int	is_end_nbr(t_nb *);
