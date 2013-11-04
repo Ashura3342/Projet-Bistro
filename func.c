@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:56:48 2013 nathan giallombardo
-** Last update Mon Nov  4 12:37:16 2013 nathan giallombardo
+** Last update Mon Nov  4 17:09:03 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
@@ -38,12 +38,27 @@ char	*xmalloc(int size)
   return (a);
 }
 
-int	my_max(int a, int b)
+int	my_max(t_nb *a, t_nb *b)
 {
-  if (a >= b)
+  int	i;
+
+  i = 0;
+  if (a->size > b->size)
     return (1);
-  else
+  else if (a->size < b->size)
     return (0);
+  else
+    {
+      while (i < a->size)
+	{
+	  if (a->nbr[i] > b->nbr[i])
+	    return (1);
+	  else if (a->nbr[i] < b->nbr[i])
+	    return (0);
+	  i = i + 1;
+	}
+      return (1);
+    }
 }
 
 int	my_isneg(char *str, int *i)

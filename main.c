@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Nov  4 12:13:22 2013 nathan giallombardo
-** Last update Mon Nov  4 14:08:49 2013 valentin wallet
+** Last update Mon Nov  4 17:10:10 2013 nathan giallombardo
 ** Last update Mon Nov  4 13:58:19 2013 valentin wallet
 */
 
@@ -29,7 +29,7 @@ t_nb		*define_operator(t_nb *nb1, t_nb *nb2, t_base *base, char op)
     }
   else
     return (NULL);
-  if (my_max(nb2->size, nb1->size))
+  if (my_max(nb2, nb1))
     {
       nb = nb1;
       nb1 = nb2;

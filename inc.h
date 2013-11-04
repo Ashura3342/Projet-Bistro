@@ -5,7 +5,7 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:23:35 2013 nathan giallombardo
-** Last update Mon Nov  4 14:05:43 2013 nathan giallombardo
+** Last update Mon Nov  4 17:09:46 2013 nathan giallombardo
 ** Last update Mon Nov  4 13:56:54 2013 valentin wallet
 */
 
@@ -35,7 +35,7 @@ int	xfree(void *);
 char	*xmalloc(int);
 int	my_isneg(char *str, int *i);
 int	parcours(char *str, int *i);
-int	my_max(int a, int b);
+int	my_max(t_nb *a, t_nb *b);
 t_nb	*make_nb_base(char *, int, int, int, int);
 t_nb	*make_nb(char *);
 t_nb	*make_nb_empty(int);
