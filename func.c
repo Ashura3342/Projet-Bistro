@@ -5,12 +5,12 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Mon Oct 28 22:56:48 2013 nathan giallombardo
-** Last update Mon Nov  4 17:09:03 2013 nathan giallombardo
+** Last update Sun Nov 10 19:42:16 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
 #include "my.h"
-#include "inc.h"
+#include "bistromathique.h"
 
 int	xfree(void *obj)
 {
@@ -30,7 +30,7 @@ char	*xmalloc(int size)
   if (a != NULL)
     {
       while (i < size)
-	a[i++] = '0';
+	a[i++] = ' ';
       a[i] = '\0';
     }
   else
@@ -61,16 +61,16 @@ int	my_max(t_nb *a, t_nb *b)
     }
 }
 
-int	my_isneg(char *str, int *i)
+char	*my_strndup(char *str, int begin, int end)
 {
-  int	a;
+  char	*dest;
+  int	i;
 
-  *i = 0;
-  a = 1;
-  while (str[*i] == '-' || str[*i] == '+')
-    {
-      if (str[(*i)++] == '-')
-	a = a * (-1);
-    }
-  return (a);
+  i = end - begin;
+  if (i > 0)
+    dest = xmalloc(i);
+  i = 0;
+  while (begin < end)
+    dest[i++] = str[begin++];
+  return (dest);
 }

@@ -5,27 +5,35 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Tue Oct 29 12:56:58 2013 nathan giallombardo
-** Last update Mon Nov  4 22:45:02 2013 nathan giallombardo
+** Last update Sun Nov 10 19:48:44 2013 nathan giallombardo
 */
 
 #include <stdlib.h>
 #include "my.h"
-#include "inc.h"
+#include "bistromathique.h"
 
 t_nb	*make_nb(char *nbr)
 {
-  t_nb	*nb;
   int	i;
   int	j;
   int	a;
 
-  j = 0;
-  a = my_isneg(nbr, &j);
+  i = 0;
+  a = 0;
+  if (nbr[i] == '-')
+    {
+      a = 1;
+      while (*nbr)
+	{
+	  *nbr = (*nbr++);
+	}
+      my_putstr(nbr);
+    }
   i = my_strlen(nbr);
-  return (make_nb_base(nbr, i, i - 1, a, j));
+  return (make_nb_base(nbr, i, i - 1, a));
 }
 
-t_nb	*make_nb_base(char *nbr, int size, int poss, int neg, int end)
+t_nb	*make_nb_base(char *nbr, int size, int poss, int neg)
 {
   t_nb	*nb;
 
@@ -34,30 +42,17 @@ t_nb	*make_nb_base(char *nbr, int size, int poss, int neg, int end)
   nb->size = size;
   nb->poss = poss;
   nb->neg = neg;
-  nb->end = end;
   return (nb);
 }
 
 t_nb	*make_nb_empty(int size)
 {
-  return (make_nb_base(xmalloc(size), size, 0, 1, 0));
-}
-
-int	is_end_nbr(t_nb *nb)
-{
-  if (nb->poss >= nb->end)
-    return (1);
-  else
-    return (0);
+  return (make_nb_base(xmalloc(size), size, 0, 0));
 }
 
 int	print_nb(t_nb *nb)
 {
-  int	i;
-
-  i = nb->end;
-  if (nb->neg < 0)
+  if (nb->neg > 0)
     my_putchar('-');
-  while (nb->nbr[i] != '\0')
-    my_putchar(nb->nbr[i++]);
+  my_putstr(nb->nbr);
 }

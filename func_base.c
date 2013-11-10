@@ -5,31 +5,21 @@
 ** Login   <giallo_n@epitech.net>
 ** 
 ** Started on  Tue Oct 29 13:05:30 2013 nathan giallombardo
-** Last update Mon Nov  4 14:09:25 2013 nathan giallombardo
+** Last update Sun Nov 10 19:47:22 2013 nathan giallombardo
 */
 
 #include	<stdlib.h>
 #include	"my.h"
-#include	"inc.h"
+#include	"bistromathique.h"
 
-t_base		*make_base(char *digits)
+char		get_digit(char *base, int c)
 {
-  t_base	*base;
-
-  base = malloc(sizeof(t_base));
-  base->digits = digits;
-  base->size = my_strlen(digits);
-  return (base);
+  return (get_digit_ch(base, c + *base)); 
 }
 
-char		get_digit(t_base *base, int c)
-{
-  int		i;
-  char		w;
 
-  i = 0;
-  w = c + base->digits[i];
-  while (base->digits[i] != '\0' && base->digits[i] != w)
-      i = i + 1;
-  return (base->digits[i]);
+char		get_digit_ch(char *base, char c)
+{
+  while (*base && *base++ != c)
+  return (*base);
 }
